@@ -1,7 +1,4 @@
-## Explore how levels of fine particulate matter (PM2.5) vary over time and among USA cities.
-
-## [View final rendered R markdown as HTML](http://htmlpreview.github.io/?https://github.com/toddknutson/most_costly_storms/blob/master/Rep_Res_Assn2.html)
-
+## Explore how levels of fine particulate matter (PM2.5) vary over time among USA cities.
 
 
 
@@ -34,8 +31,8 @@ Source Classification Code Table (Source_Classification_Code.rds): This table pr
 You can read each of the two files using the readRDS() function in R. For example, reading in each file can be done with the following code:  
 This first line will likely take a few seconds. Be patient!  
 
-NEI <- readRDS("summarySCC_PM25.rds")
-SCC <- readRDS("Source_Classification_Code.rds")
+NEI <- readRDS("summarySCC_PM25.rds")  
+SCC <- readRDS("Source_Classification_Code.rds")  
 as long as each of those files is in your current working directory (check by calling dir() and see if those files are in the listing).  
 
 
@@ -44,7 +41,7 @@ The overall goal of this assignment is to explore the National Emissions Invento
 
 
 ## Questions
-You must address the following questions and tasks in your exploratory analysis. For each question/task you will need to make a single plot. Unless specified, you can use any plotting system in R to make your plot.
+You must address the following questions and tasks in your exploratory analysis. For each question/task you will need to make a single plot. Unless specified, you can use any plotting system in R to make your plot.  
 1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 1. Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.
 1. Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.
